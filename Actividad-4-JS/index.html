@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Actividades Diarias</title>
+    <style>
+        body {
+            background-color: #363946;
+            color: #B1B6A6;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #000000;
+        }
+
+        #activity-form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        #activity-input {
+            flex-grow: 1;
+            margin-right: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #696773;
+        }
+
+        #activity-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #819595;
+            color: #B1B6A6;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #activity-form button:hover {
+            background-color: #696773;
+        }
+
+        #activity-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #activity-list li {
+            background-color: #696773;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #activity-list li button {
+            background-color: #000000;
+            color: #B1B6A6;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #activity-list li button:hover {
+            background-color: #819595;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de Actividades Diarias</h1>
+    <form id="activity-form">
+        <input type="text" id="activity-input" placeholder="Añade tu actividad..." required>
+        <button type="submit">Añadir actividad</button>
+    </form>
+    <ul id="activity-list">
+    </ul>
+</body>
+<script src="app.js"></script>
+</html>
